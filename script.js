@@ -11,7 +11,7 @@ draggables.forEach(draggable => {
 })
 
 containers.forEach(container => {
-    container.addEventListener('pointerover', e => {
+    container.addEventListener('pointermove', e => {
         e.preventDefault()
         const afterElement = getDragAfterElement(container, e.clientY)
         const draggable = document.querySelector('.dragging')
